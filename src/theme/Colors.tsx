@@ -1,6 +1,7 @@
 export default {
-  primary: '#3498DB',
-  secondary: '#007CAA',
+  primary: '#EFB91A',//yellow one
+  secondary: '#E04C26',//red logo one
+  ternary: '#0A7AA6',//blue the logo one
   white: '#FFFFFF',
   background: '#F5F5F5',
   darkText: '#000000',
@@ -8,7 +9,7 @@ export default {
   parrotGreen: '#1DBF74',
   lightText: '#B1B2CA',
   telegram: '#2AABEE',
-  ternary: '#4d4bac',
+
   bgSecondary: '#EAEFFF',
   greyBg: '#FF9C6521',
   transparent: 'transparent',
