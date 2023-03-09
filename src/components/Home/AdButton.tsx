@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     height: 35,
     borderRadius: 4,
     ...CommonStyle.center,
-    backgroundColor: '#52CDB9',
+    backgroundColor: Colors.primary,
   },
 });
 

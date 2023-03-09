@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
   btnStyle: {
     width: '100%',
     height: 50,
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.ternary,
     borderRadius: 4,
     ...CommonStyle.center,
   },

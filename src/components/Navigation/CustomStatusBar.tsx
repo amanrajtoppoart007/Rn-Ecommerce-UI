@@ -6,7 +6,7 @@ const CustomStatusBar = ({background}: {background?: string}) => {
   return (
     <StatusBar
       barStyle={'light-content'}
-      backgroundColor={background ?? Colors.secondary}
+      backgroundColor={background ?? Colors.primary}
     />
   );
 };
