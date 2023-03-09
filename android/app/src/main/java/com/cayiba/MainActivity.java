@@ -27,7 +27,7 @@ public class MainActivity extends ReactActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-     RNBootSplash.init(this); // <- initialize the splash screen custom added code
+      RNBootSplash.init(this); // <- initialize the splash screen custom added code
      super.onCreate(savedInstanceState); //custom added code
       //super.onCreate(null);
     }
