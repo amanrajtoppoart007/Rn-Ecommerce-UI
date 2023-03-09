@@ -4,6 +4,8 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
+import android.os.Bundle;
+import com.zoontek.rnbootsplash.RNBootSplash;
 
 public class MainActivity extends ReactActivity {
 
@@ -15,6 +17,20 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "Cayiba";
   }
+
+    /**
+     *custom added
+     * @param savedInstanceState
+     * You should add this code, which specifically discards any Activity state
+     * persisted during the Activity restart process, to avoid inconsistencies that lead to crashes.
+     */
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+     RNBootSplash.init(this); // <- initialize the splash screen custom added code
+     super.onCreate(savedInstanceState); //custom added code
+      //super.onCreate(null);
+    }
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util class {@link
