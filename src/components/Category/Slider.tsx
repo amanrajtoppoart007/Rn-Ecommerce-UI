@@ -2,22 +2,32 @@ import React, {useMemo, useState} from 'react';
 import {View, FlatList, StyleSheet, Dimensions} from 'react-native';
 import categories from '../../data/categories';
 import SliderCard from './SliderCard';
+import {snakeCase} from '../../utils/utils';
+import useLanguage from '../../hooks/useLanguage';
 
 interface Item {
   title: string;
   Svg: React.ReactNode;
+  key: string;
 }
 
 const ITEM_WIDTH = Dimensions.get('window').width / 3;
 
 const FlatListSlider: React.FC = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const {translate} = useLanguage();
+  const [_, setSelectedIndex] = useState(0);
   const list = useMemo(() => {
-    return categories.map(item => item);
+    return categories.map(item => {
+      return {
+        ...item,
+        key: snakeCase(item.title),
+      };
+    });
   }, []);
 
   const renderItem = ({item}: {item: Item}) => {
-    return <SliderCard title={item.title} Svg={item.Svg} />;
+    const value = `categories.${item.key}`;
+    return <SliderCard title={translate(value)} Svg={item.Svg} />;
   };
 
   const handleScroll = (event: any) => {

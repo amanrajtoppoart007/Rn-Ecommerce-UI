@@ -1,0 +1,328 @@
+{
+  "en":{
+    "categories":[
+      {
+        "advertisement":"Advertisement"
+      },
+      {
+        "allNightDrugStore":"All Night Drug Store"
+      },
+      {
+        "art":"Art"
+      },
+      {
+        "backToSchool":"Back To School"
+      },
+      {
+        "bikesByCycle":"Bikes By Cycle"
+      },
+      {
+        "careBeauty":"Care Beauty"
+      },
+      {
+        "cars":"Cars"
+      },
+      {
+        "constructionBuilding":"Construction Building"
+      },
+      {
+        "backToSchool":"Back to School"
+      },
+      {
+        "bikesByCycle":"Bikes by Cycle"
+      },
+      {
+        "careBeauty":"Care & Beauty"
+      },
+      {
+        "cars":"Cars"
+      },
+      {
+        "constructionBuilding":"Construction & Building"
+      },
+      {
+        "decorations":"Decorations"
+      },
+      {
+        "dietetic":"Dietetic"
+      },
+      {
+        "dryCleaning":"Dry Cleaning"
+      },
+      {
+        "electricianMechanics":"Electrician & Mechanics"
+      },
+      {
+        "electronic":"Electronic"
+      },
+      {
+        "event":"Event"
+      },
+      {
+        "fashion":"Fashion"
+      },
+      {
+        "foodFruits":"Food & Fruits"
+      },
+      {
+        "foundObjects":"Found Objects"
+      },
+      {
+        "furniture":"Furniture"
+      },
+      {
+        "hairSalon":"Hair Salon"
+      },
+      {
+        "handMade":"Hand Made"
+      },
+      {
+        "handPhone":"Hand Phone"
+      },
+      {
+        "healthCare":"Health Care"
+      },
+      {
+        "homeAppliance":"Home Appliance"
+      },
+      {
+        "homeServices":"Home Services"
+      },
+      {
+        "hotel":"Hotel"
+      },
+      {
+        "insurance":"Insurance"
+      },
+      {
+        "jobs":"Jobs"
+      },
+      {
+        "legalServices":"Legal Services"
+      },
+      {
+        "leisureOutings":"Leisure & Outings"
+      },
+      {
+        "lingerie":"Lingerie"
+      },
+      {
+        "massMedia":"Mass Media"
+      },
+      {
+        "meet":"Meet"
+      },
+      {
+        "motorcycleBike":"Motorcycle & Bike"
+      },
+      {
+        "otherServices":"Other Services"
+      },
+      {
+        "others":"Others"
+      },
+      {
+        "phone":"Phone"
+      },
+      {
+        "printingPress":"Printing Press"
+      },
+      {
+        "realEstate":"Real Estate"
+      },
+      {
+        "restaurantsBars":"Restaurants & Bars"
+      },
+      {
+        "shoppingReadyToWear":"Shopping - Ready to Wear"
+      },
+      {
+        "shoppingThriftStore":"Shopping - Thrift Store"
+      },
+      {
+        "sportAccessories":"Sport Accessories"
+      },
+      {
+        "supermarket":"Supermarket"
+      },
+      {
+        "tattoo":"Tattoo"
+      },
+      {
+        "towing":"Towing"
+      },
+      {
+        "tradingImportExport":"Trading - Import & Export"
+      },
+      {
+        "traditionalMedicine":"Traditional Medicine"
+      },
+      {
+        "veterinarians":"Veterinarians"
+      }
+    ]
+  },
+  "fr":{
+    "categories":[
+      {
+        "advertisement":"Publicité"
+      },
+      {
+        "allNightDrugStore":"Pharmacie de nuit"
+      },
+      {
+        "art":"Art"
+      },
+      {
+        "backToSchool":"Retour à l'école"
+      },
+      {
+        "bikesByCycle":"Vélos par cycle"
+      },
+      {
+        "careBeauty":"Soins & beauté"
+      },
+      {
+        "cars":"Voitures"
+      },
+      {
+        "constructionBuilding":"Construction & bâtiment"
+      },
+      {
+        "backToSchool":"Retour à l'école"
+      },
+      {
+        "bikesByCycle":"Vélos par cycle"
+      },
+      {
+        "careBeauty":"Soins & beauté"
+      },
+      {
+        "cars":"Voitures"
+      },
+      {
+        "constructionBuilding":"Construction & bâtiment"
+      },
+      {
+        "decorations":"Décorations"
+      },
+      {
+        "dietetic":"Diététique"
+      },
+      {
+        "dryCleaning":"Nettoyage à sec"
+      },
+      {
+        "electricianMechanics":"Électricien & mécanique"
+      },
+      {
+        "electronic":"Électronique"
+      },
+      {
+        "event":"Événement"
+      },
+      {
+        "fashion":"Mode"
+      },
+      {
+        "foodFruits":"Aliments & fruits"
+      },
+      {
+        "foundObjects":"Objets trouvés"
+      },
+      {
+        "furniture":"Mobilier"
+      },
+      {
+        "hairSalon":"Salon de coiffure"
+      },
+      {
+        "handMade":"Fait à la main"
+      },
+      {
+        "handPhone":"Téléphone portable"
+      },
+      {
+        "healthCare":"Soins de santé"
+      },
+      {
+        "homeAppliance":"Appareils ménagers"
+      },
+      {
+        "homeServices":"Services à domicile"
+      },
+      {
+        "hotel":"Hôtel"
+      },
+      {
+        "insurance":"Assurance"
+      },
+      {
+        "jobs":"Emplois"
+      },
+      {
+        "legalServices":"Services juridiques"
+      },
+      {
+        "leisureOutings":"Loisirs & sorties"
+      },
+      {
+        "lingerie":"Lingerie"
+      },
+      {
+        "massMedia":"Médias de masse"
+      },
+      {
+        "meet":"Rencontre"
+      },
+      {
+        "motorcycleBike":"Moto & vélo"
+      },
+      {
+        "otherServices":"Autres services"
+      },
+      {
+        "others":"Autres"
+      },
+      {
+        "phone":"Téléphone"
+      },
+      {
+        "printingPress":"Imprimerie"
+      },
+      {
+        "realEstate":"Immobilier"
+      },
+      {
+        "restaurantsBars":"Restaurants & bars"
+      },
+      {
+        "shoppingReadyToWear":"Shopping - Prêt-à-porter"
+      },
+      {
+        "shoppingThriftStore":"Shopping - Magasin d'occasion"
+      },
+      {
+        "sportAccessories":"Accessoires de sport"
+      },
+      {
+        "supermarket":"Supermarché"
+      },
+      {
+        "tattoo":"Tatouage"
+      },
+      {
+        "towing":"Remorquage"
+      },
+      {
+        "tradingImportExport":"Commerce - Importation et exportation"
+      },
+      {
+        "traditionalMedicine":"Médecine traditionnelle"
+      },
+      {
+        "veterinarians":"Vétérinaires"
+      }
+    ]
+  }
+}

@@ -9,11 +9,17 @@ import Header from '../components/Navigation/Header';
 import useLanguage from '../hooks/useLanguage';
 
 import categories from '../data/categories';
+import {snakeCase} from '../utils/utils';
 
 const Categories = () => {
   const {translate} = useLanguage();
   const list = useMemo(() => {
-    return categories.map(item => item);
+    return categories.map(item => {
+      return {
+        ...item,
+        key: snakeCase(item.title),
+      };
+    });
   }, []);
   return (
     <SafeAreaView style={CommonStyle.container}>
@@ -26,12 +32,13 @@ const Categories = () => {
             <View style={styles.grid}>
               {list.map(
                 (
-                  item: {title: string; Svg: React.ReactNode},
+                  item: {title: string; Svg: React.ReactNode; key: string},
                   index: number,
                 ) => {
+                  const value = `categories.${item.key}`;
                   return (
                     <View style={styles.card} key={index?.toString()}>
-                      <CategoryCard Svg={item.Svg} title={item.title} />
+                      <CategoryCard Svg={item.Svg} title={translate(value)} />
                     </View>
                   );
                 },
