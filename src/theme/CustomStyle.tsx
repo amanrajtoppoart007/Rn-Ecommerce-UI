@@ -15,6 +15,13 @@ const CustomStyle = {
       },
     }).height;
   },
+  padding: (value: number) => {
+    return StyleSheet.create({
+      padding: {
+        padding: value,
+      },
+    }).padding;
+  },
   backgroundColor: (color: string) => {
     return StyleSheet.create({
       backgroundColor: {
