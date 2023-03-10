@@ -6,8 +6,8 @@ import CommonStyle from '../../theme/CommonStyle';
 
 interface Props extends TouchableOpacityProps {
   style: any;
-  rippleColor: any;
-  borderRadius: number;
+  rippleColor?: any;
+  borderRadius?: number;
   elevation?: 1 | 2 | 3 | 4 | 5 | undefined;
   children: React.ReactNode;
 }

@@ -2,8 +2,6 @@ import React, {useMemo, useState} from 'react';
 import {View, FlatList, StyleSheet, Dimensions} from 'react-native';
 import categories from '../../data/categories';
 import SliderCard from './SliderCard';
-import CustomStyle from '../../theme/CustomStyle';
-import Colors from '../../theme/Colors';
 
 interface Item {
   title: string;
@@ -28,27 +26,6 @@ const FlatListSlider: React.FC = () => {
     setSelectedIndex(index);
   };
 
-  function backgroundColor(color: string) {
-    return CustomStyle.backgroundColor(color);
-  }
-  const renderDots = () => {
-    return (
-      <View style={styles.dotContainer}>
-        {list.map((item, index) => (
-          <View
-            key={index?.toString()}
-            style={[
-              styles.dot,
-              index === selectedIndex
-                ? backgroundColor(Colors.secondary)
-                : backgroundColor('gray'),
-            ]}
-          />
-        ))}
-      </View>
-    );
-  };
-
   return (
     <View style={styles.container}>
       <FlatList
@@ -61,7 +38,6 @@ const FlatListSlider: React.FC = () => {
         pagingEnabled
         snapToInterval={ITEM_WIDTH + 10} // add 10px spacing between items
       />
-      {renderDots()}
     </View>
   );
 };

@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: Fonts.RobotoMedium,
     fontSize: 13,
-    color: Colors.secondary,
+    color: Colors.ternary,
   },
 });
 

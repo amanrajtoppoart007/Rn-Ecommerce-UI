@@ -11,6 +11,7 @@ import Register from '../screens/Auth/Register';
 import Listings from '../screens/Listings';
 import UserListings from '../screens/UserListings';
 import EditListing from '../screens/EditListing';
+import ViewListing from '../screens/ViewListing';
 export type RootDrawerParams = {
   AppNavs: undefined;
   Login: undefined;
@@ -18,6 +19,7 @@ export type RootDrawerParams = {
   Listings: undefined;
   UserListings: undefined;
   EditListing: undefined;
+  ViewListing: undefined;
 };
 
 const Drawer = createDrawerNavigator<RootDrawerParams>();
@@ -38,6 +40,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name={'Listings'} component={Listings} />
       <Drawer.Screen name={'UserListings'} component={UserListings} />
       <Drawer.Screen name={'EditListing'} component={EditListing} />
+      <Drawer.Screen name={'ViewListing'} component={ViewListing} />
     </Drawer.Navigator>
   );
 };
