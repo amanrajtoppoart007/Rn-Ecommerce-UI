@@ -17,8 +17,9 @@ import {NavigationProp} from '@react-navigation/native';
 import Header from '../components/Navigation/Header';
 import useLanguage from '../hooks/useLanguage';
 import Slider from '../components/Category/Slider';
+import PopularListingSlider from '../components/PopularListingSlider';
 
-const productImage = require('../assets//images/placeholder.png');
+const productImage = require('../assets/images/placeholder.png');
 const Home = ({navigation}: {navigation: NavigationProp<any>}) => {
   const {translate} = useLanguage();
 
@@ -60,6 +61,12 @@ const Home = ({navigation}: {navigation: NavigationProp<any>}) => {
       <View style={CommonStyle.wrapper}>
         <Header />
         <ScrollView showsVerticalScrollIndicator={false} style={styles.content}>
+          <View style={styles.section}>
+            <Text style={styles.sectionTitle}> Popular Products</Text>
+          </View>
+          <View style={styles.section}>
+            <PopularListingSlider />
+          </View>
           <View style={styles.section}>
             <Text style={styles.categoryTitle}> {translate('category')}</Text>
           </View>
