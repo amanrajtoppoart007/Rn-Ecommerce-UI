@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   Image,
   SafeAreaView,
@@ -7,6 +7,8 @@ import {
   Text,
   View,
 } from 'react-native';
+import * as Yup from 'yup';
+import {useFormik} from 'formik';
 import CommonStyle from '../theme/CommonStyle';
 import Fonts from '../theme/Fonts';
 import Colors from '../theme/Colors';
@@ -17,6 +19,7 @@ import RippleButton from '../components/Button/RippleButton';
 import NavBar from '../components/Navigation/NavBar';
 import CustomStatusBar from '../components/Navigation/CustomStatusBar';
 import useLanguage from '../hooks/useLanguage';
+import FormError from '../components/FormError';
 
 const placeholder = require('../assets/images/image.png');
 const UploadImageCard = () => {
@@ -77,14 +80,56 @@ const cities = [
 
 const EditListing = () => {
   const {translate} = useLanguage();
-  const [name, setName] = useState('');
-  const [description, setDescription] = useState('');
-  const [price, setPrice] = useState('');
-  const [address, setAddress] = useState('');
-  const [category, setCategory] = useState({title: '', value: ''});
-  const [city, setCity] = useState({title: '', value: ''});
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required(translate('validation.productName')),
+    description: Yup.string().required(translate('validation.description')),
+    price: Yup.string().required(translate('validation.price')),
+    address: Yup.string().required(translate('validation.address')),
+    category: Yup.object().shape({
+      value: Yup.string().required(translate('validation.category')),
+    }),
+    city: Yup.object().shape({
+      value: Yup.string().required(translate('validation.city')),
+    }),
+  });
 
-  const submit = () => {};
+  const setNameField = (text: string) => {
+    setFieldValue('name', text);
+  };
+  const setDescriptionField = (text: string) => {
+    setFieldValue('description', text);
+  };
+  const setPriceField = (text: string) => {
+    setFieldValue('price', text);
+  };
+  const setAddressField = (text: string) => {
+    setFieldValue('address', text);
+  };
+  const setCategoryField = (value: {title: string; value: string}) => {
+    setFieldValue('category', value);
+  };
+  const setCityField = (value: {title: string; value: string}) => {
+    setFieldValue('city', value);
+  };
+
+  const {errors, values, setFieldValue, isSubmitting, submitForm} = useFormik({
+    initialValues: {
+      name: '',
+      description: '',
+      price: '',
+      address: '',
+      category: {title: '', value: ''},
+      city: {title: '', value: ''},
+    },
+    validationSchema: validationSchema,
+    onSubmit: params => {
+      submit(params);
+    },
+  });
+
+  const submit = (params: any) => {
+    console.log(params);
+  };
   return (
     <SafeAreaView style={CommonStyle.container}>
       <CustomStatusBar />
@@ -99,22 +144,24 @@ const EditListing = () => {
               label={translate('product_name_label')}
               style={styles.inputStyle}
               labelStyle={styles.label}
-              value={name}
-              setValue={setName}
+              value={values.name}
+              setValue={setNameField}
               textStyle={styles.inputTextStyle}
               placeholder={translate('product_name_input_helper')}
             />
+            <FormError error={errors.name} />
           </View>
           <View style={styles.section}>
             <LabeledInput
               label={'Product Description'}
               style={styles.inputBoxStyle}
               labelStyle={styles.label}
-              value={description}
-              setValue={setDescription}
+              value={values.description}
+              setValue={setDescriptionField}
               textStyle={styles.inputTextStyle}
               placeholder={translate('product_description_input_helper')}
             />
+            <FormError error={errors.description} />
           </View>
           <View style={styles.section}>
             <Text style={styles.label}>
@@ -123,18 +170,20 @@ const EditListing = () => {
             <DropDownPicker
               items={categories}
               placeholder={translate('category_dropdown_label')}
-              selected={category}
-              setSelected={setCategory}
+              selected={values.category}
+              setSelected={setCategoryField}
             />
+            <FormError error={errors?.category?.value} />
           </View>
           <View style={styles.section}>
             <Text style={styles.label}>{translate('city_dropdown_label')}</Text>
             <DropDownPicker
               items={cities}
               placeholder={translate('city_dropdown_label')}
-              selected={city}
-              setSelected={setCity}
+              selected={values.city}
+              setSelected={setCityField}
             />
+            <FormError error={errors?.city?.value} />
           </View>
           <View style={styles.section}>
             <View style={styles.grid}>
@@ -149,32 +198,32 @@ const EditListing = () => {
               label={translate('price_input_label')}
               style={styles.inputStyle}
               labelStyle={styles.label}
-              value={price}
-              setValue={setPrice}
+              value={values.price}
+              setValue={setPriceField}
               textStyle={styles.inputTextStyle}
               placeholder={translate('price_input_helper_text')}
             />
+            <FormError error={errors.price} />
           </View>
           <View style={styles.section}>
             <LabeledInput
               label={translate('address_label')}
               style={styles.inputStyle}
               labelStyle={styles.label}
-              value={address}
-              setValue={setAddress}
+              value={values.address}
+              setValue={setAddressField}
               textStyle={styles.inputTextStyle}
               placeholder={translate('address_input_helper_text')}
             />
+            <FormError error={errors.address} />
           </View>
           <View style={styles.section}>
             <RippleButton
-              onPress={submit}
+              onPress={submitForm}
               btnTextStyle={styles.btnTextStyle}
               btnText={translate('update')}
               style={styles.btnStyle}
-              rippleColor={Colors.rippleColor}
-              borderRadius={4}
-              elevation={1}
+              disabled={isSubmitting}
             />
           </View>
         </ScrollView>

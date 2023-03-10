@@ -93,7 +93,29 @@
     "price_input_label":"Enter Product Price",
     "price_input_helper_text":"Enter Price",
     "address_label":"Address",
-    "address_input_helper_text":"Enter Address"
+    "address_input_helper_text":"Enter Address",
+    "validation": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "password": "Enter your password",
+      "confirmPassword": "Enter confirm password",
+      "productName": "Enter product name",
+      "category": "Select category",
+      "description": "Add production description",
+      "city": "Select City",
+      "price": "Select product price",
+      "address": "Select your address",
+      "passwordValidation": {
+        "required": "Please select a password",
+        "min": "The password must contain 8 or more characters",
+        "minLowercase": "The password must contain at least 1 lowercase letter",
+        "minUppercase": "The password must contain at least 1 uppercase letter",
+        "minNumbers": "The password must contain at least 1 number",
+        "minSymbols": "The password must contain at least 1 special character",
+        "matchPassword": "Passwords should match"
+      }
+
+    }
   },
   "fr":{
     "save":"Enregistrer",
@@ -189,6 +211,27 @@
     "price_input_label":"Entrez le prix du produit",
     "price_input_helper_text":"Entrez le prix",
     "address_label":"Adresse",
-    "address_input_helper_text":"Entrez votre adresse"
+    "address_input_helper_text":"Entrez votre adresse",
+    "validation": {
+      "name": "Entrez votre nom",
+      "email": "Entrez votre adresse e-mail",
+      "password": "Entrez votre mot de passe",
+      "confirmPassword": "Confirmez votre mot de passe",
+      "productName": "Entrez le nom du produit",
+      "category": "Sélectionnez une catégorie",
+      "description": "Ajouter une description du produit",
+      "city": "Sélectionnez une ville",
+      "price": "Sélectionnez le prix du produit",
+      "address": "Sélectionnez votre adresse",
+      "passwordValidation": {
+         "required": "Veuillez sélectionner un mot de passe",
+         "min": "Le mot de passe doit contenir 8 caractères ou plus",
+        "minLowercase": "Le mot de passe doit contenir au moins 1 lettre en minuscule",
+        "minUppercase": "Le mot de passe doit contenir au moins 1 lettre en majuscule",
+        "minNumbers": "Le mot de passe doit contenir au moins 1 chiffre",
+        "minSymbols": "Le mot de passe doit contenir au moins 1 caractère spécial",
+        "matchPassword": "Les mots de passe doivent correspondre"
+      }
+    }
   }
 }

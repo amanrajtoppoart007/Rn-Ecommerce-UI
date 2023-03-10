@@ -10,6 +10,7 @@ type inputProps = {
   textStyle: any;
   onFocus?: Function;
   placeholder?: string;
+  secureTextEntry?: boolean;
 };
 const LabeledInput = ({
   label,
@@ -19,6 +20,7 @@ const LabeledInput = ({
   value,
   setValue,
   placeholder,
+  secureTextEntry,
 }: inputProps) => {
   return (
     <React.Fragment>
@@ -28,6 +30,7 @@ const LabeledInput = ({
         value={value}
         onChangeText={text => setValue(text)}
         placeholder={placeholder}
+        secureTextEntry={secureTextEntry ?? false}
       />
     </React.Fragment>
   );

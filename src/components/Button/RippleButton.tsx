@@ -8,8 +8,8 @@ interface Props extends TouchableOpacityProps {
   btnTextStyle: any;
   btnText: string;
   style: any;
-  rippleColor: any;
-  borderRadius: number;
+  rippleColor?: any;
+  borderRadius?: number;
   elevation?: 1 | 2 | 3 | 4 | 5 | undefined;
 }
 const RippleButton: React.FC<Props> = ({
@@ -27,11 +27,11 @@ const RippleButton: React.FC<Props> = ({
       width: '100%',
       height: '100%',
       ...CommonStyle.rowCenter,
-      borderRadius: borderRadius,
+      borderRadius: borderRadius ?? 0,
     },
   });
   return (
-    <Surface style={style} elevation={elevation ?? 5}>
+    <Surface style={style} elevation={elevation ?? 1}>
       <TouchableRipple
         onPress={onPress}
         onLongPress={onLongPress}
