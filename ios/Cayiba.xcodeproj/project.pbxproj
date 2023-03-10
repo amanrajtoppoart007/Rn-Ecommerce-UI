@@ -36,6 +36,8 @@
 		9AFD6F782B844125900A9A39 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B51777B17FCA46DB9D8669D1 /* Poppins-Black.ttf */; };
 		9F8FE8D229BA47BC00D9D15D /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FE8D129BA47BC00D9D15D /* BootSplash.storyboard */; };
 		9F8FE8D329BA47BC00D9D15D /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8FE8D129BA47BC00D9D15D /* BootSplash.storyboard */; };
+		9FA6D79729BBA7F400E1509A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6D79629BBA7F400E1509A /* Fonts */; };
+		9FA6D79829BBA7F400E1509A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 9FA6D79629BBA7F400E1509A /* Fonts */; };
 		A2474B5648044998944A829B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11AF1EF379164E719157B1FE /* Poppins-Medium.ttf */; };
 		A55E997B20874FFBB406BC6E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F0C245A72DC42EAB6B0BA36 /* Roboto-Thin.ttf */; };
 		A6BFE3AEE0C7414786941F5C /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F872CE7331144D49ADA0A81C /* Poppins-ExtraLight.ttf */; };
@@ -92,6 +94,7 @@
 		8F8273C40723421FBF71B899 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../src/assets/fonts/Poppins/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		9CB3657119AE4F53AEBAF4AD /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		9F8FE8D129BA47BC00D9D15D /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = Cayiba/BootSplash.storyboard; sourceTree = "<group>"; };
+		9FA6D79629BBA7F400E1509A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
 		A0CB4E341AB24629A3B5D4AC /* LICENSE.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = LICENSE.txt; path = ../src/assets/fonts/Roboto/LICENSE.txt; sourceTree = "<group>"; };
 		A3838E336CCD4B1F8D711C66 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		B2F4A547D0884C6D8F352323 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				9FA6D79629BBA7F400E1509A /* Fonts */,
 				9F8FE8D129BA47BC00D9D15D /* BootSplash.storyboard */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -341,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8FE8D329BA47BC00D9D15D /* BootSplash.storyboard in Resources */,
+				9FA6D79829BBA7F400E1509A /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +358,7 @@
 				9AFD6F782B844125900A9A39 /* Poppins-Black.ttf in Resources */,
 				E89055A1E94C4842A748C4A4 /* Poppins-BlackItalic.ttf in Resources */,
 				3A66AF7D5553400F9EBAFDD1 /* Poppins-Bold.ttf in Resources */,
+				9FA6D79729BBA7F400E1509A /* Fonts in Resources */,
 				26E43B26EB9F468891AC27B4 /* Poppins-BoldItalic.ttf in Resources */,
 				0FBE683864E444A5991B88C6 /* Poppins-ExtraBold.ttf in Resources */,
 				D379E547DA494BB38BF94BEC /* Poppins-ExtraBoldItalic.ttf in Resources */,
