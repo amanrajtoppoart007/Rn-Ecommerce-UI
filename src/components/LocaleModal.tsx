@@ -11,6 +11,7 @@ import {toggleLocaleModal, setCountry} from '../state/reducers/locale.slice';
 import DropDownPicker from './DropDownPicker';
 import {useEffect, useState} from 'react';
 import useLanguage from '../hooks/useLanguage';
+import {widthPercentageToDP} from 'react-native-responsive-screen';
 
 const LocaleModal = () => {
   const dispatch = useDispatch();
@@ -121,8 +122,7 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   centeredView: {
-    width: '100%',
-
+    width: widthPercentageToDP('90%'),
     backgroundColor: 'white',
     justifyContent: 'flex-start',
     alignItems: 'center',

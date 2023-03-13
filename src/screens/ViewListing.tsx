@@ -75,19 +75,22 @@ const ViewListing = () => {
           <RippleView
             style={[
               styles.btnStyle,
-              CustomStyle.backgroundColor(Colors.success),
+              CustomStyle.backgroundColor(Colors.primary),
             ]}>
             <FontAwesome name={'phone'} color={Colors.white} size={25} />
           </RippleView>
           <RippleView
             style={[
               styles.btnStyle,
-              CustomStyle.backgroundColor(Colors.ternary),
+              CustomStyle.backgroundColor(Colors.secondary),
             ]}>
             <Ionicons name={'chatbox-outline'} color={Colors.white} size={25} />
           </RippleView>
           <RippleView
-            style={[styles.btnStyle, CustomStyle.backgroundColor('gray')]}>
+            style={[
+              styles.btnStyle,
+              CustomStyle.backgroundColor(Colors.ternary),
+            ]}>
             <FontAwesome name={'envelope-o'} color={Colors.white} size={25} />
           </RippleView>
         </View>
@@ -166,13 +169,14 @@ const styles = StyleSheet.create({
     zIndex: 1,
     position: 'absolute',
     bottom: 0,
-    height: 55,
     width: '100%',
     ...CommonStyle.rowSpaceEven,
+    backgroundColor: Colors.white,
+    padding: 4,
   },
   btnStyle: {
-    width: '32%',
-    height: 50,
+    width: 100,
+    height: 45,
     backgroundColor: Colors.ternary,
     borderRadius: 4,
     ...CommonStyle.center,
